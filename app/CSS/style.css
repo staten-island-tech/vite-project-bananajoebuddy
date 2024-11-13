@@ -1,0 +1,206 @@
+/* @import url(list.js); */
+
+/*body {
+    background-color: rgb(255, 240, 220);
+}
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px 15px 0px 15px;
+}
+/* :root {
+    --light-blue: rgb(151, 203, 255);
+    --dark-blue: rgb(20, 105, 190);
+    --light-red: rgb(239, 67, 67);
+    --primary: var(--light-red);
+
+    --h1: 1.883rem;
+    --h2: 2.649rem;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+.warm{
+    --primary: var(--light-red);
+}
+
+.cool {
+    --primary: var(--light-blue)
+}
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);;
+}
+ */
+
+/*h2,h3{
+    background-color: transparent;
+} 
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(255, 240, 220);
+}
+
+.card{
+    width: 40rem;
+    height: 65rem;
+    border: 15px solid wheat;
+    border-radius: 3px;
+    border-style: double;
+    display: flex;
+    margin: 20rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blanchedalmond;
+    box-shadow: 1rem 1rem 1rem -1rem rgb(55, 52, 59);
+}
+
+.card-img{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.card-header{
+    font-size: 3.2rem;
+    margin-top: 1.2rem;
+}
+
+.card-desc{
+    font-size: 2.0rem;
+    text-align: center;
+} */
+
+
+
+* {
+    box-sizing: border-box;
+ }
+ 
+ :root {
+    --light-background: rgb(230, 220, 206); /* Light background color */
+    --dark-background: rgb(55, 60, 99); /* Dark background color */
+    --light-primary: #785d33; /* Light mode primary color (red) */
+    --light-primary-second: #c1b093;
+    --dark-primary: rgb(8, 11, 27); /* Dark mode primary color (blue) */
+    --dark-primary-second: rgb(26, 31, 58);
+    --light-text: #624f2c; /* Light mode text color */
+    --light-text-second: #ffffff;
+    --dark-text: rgb(17, 9, 3); /* Dark mode text color */
+    --dark-text-second: #ffffff;
+    --light-drop: rgb(92, 88, 98);
+    --dark-drop: #170f03;
+}
+
+body.dark{
+    --background: var(--dark-background);
+    --primary: var(--dark-primary);
+    --primary-second: var(--dark-primary-second);
+    --text: var(--dark-text);
+    --text-second: var(--dark-text-second);
+    --drop: var(--dark-drop);
+}
+
+body.light{
+    --background: var(--light-background);
+    --primary: var(--light-primary);
+    --primary-second: var(--light-primary-second);
+    --text: var(--light-text);
+    --text-second: var(--light-text-second);
+    --drop: var(--light-drop);
+}
+ 
+ body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0 15px;
+ }
+ 
+
+ .container-buttons {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding: 1rem 5%; 
+    margin-bottom: 1.0rem; 
+}
+
+ button {
+    margin: 0.5rem; 
+    padding: 10px 20px; 
+    font-size: 1rem;
+    background-color: var(--primary); 
+    color: var(--text-second);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*flex-grow: 1;  Makes buttons grow to fill available space*/
+    text-align: center; 
+}
+
+ 
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+ }
+ 
+ h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+    color: var(--text);
+ }
+ .card {
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+    border: 15px solid var(--primary-second);
+    border-radius: 3px;
+    border-style: double;
+    display: flex;
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--background);
+    box-shadow: 1rem 1rem 1rem -1rem var(--drop);
+ }
+ 
+ 
+ .card-img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container, cropping if necessary */
+    transition: all 0.3s;
+ }
+ 
+ 
+ .card-header {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: var(--text);
+ }
+ 
+ 
+ .card-desc {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text);
+ }
